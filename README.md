@@ -1,15 +1,75 @@
-NewsMind AI is a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.
+# 📰 NewsMind AI
 
-<img width="1272" height="700" alt="Screenshot 2026-07-27 161101" src="https://github.com/user-attachments/assets/54eb8415-7018-457f-975b-7f16aab41cd1" />
+**NewsMind AI** is a user-friendly news research application that enables users to analyze financial and stock market news effortlessly. Simply provide one or more news article URLs, and the application extracts, processes, and indexes the content using **LangChain**, **NVIDIA AI Embeddings**, and **FAISS**. Users can then ask natural language questions and receive context-aware answers along with the relevant source URLs.
 
-Features:
-1.Load URLs or upload text files containing URLs to fetch article content.
-2.Process article content through LangChain's UnstructuredURLLoader.
-3.Construct embedding vectors using NVIDIA AI Embeddings and leverage FAISS, a powerful similarity search library, to enable swift and effective retrieval of relevant information.
-4.Interact with NVIDIA-hosted Large Language Models (LLMs) using ChatNVIDIA by submitting queries and receiving accurate answers along with source URLs.
+## 📸 Screenshot
 
-Project Structure:
-main.py: The main Streamlit application script.
-requirements.txt: A list of required Python packages for the project.
-faiss_store_openai.pkl: A pickle file to store the FAISS index.
-.env: Configuration file for storing your ChatNvidia API key.
+> Add your application screenshot here.
+
+![NewsMind AI](Screenshot%202026-07-27%20161101.png)
+
+
+##  Features
+
+-  Load news article URLs or upload a text file containing multiple URLs.
+-  Extract and process article content using **LangChain's UnstructuredURLLoader**.
+-  Generate semantic embeddings using **NVIDIA AI Embeddings**.
+-  Store and search embeddings efficiently with **FAISS Vector Store**.
+-  Query the indexed articles using **ChatNVIDIA** to receive accurate, context-aware responses.
+-  Display the source URLs used to generate each answer for transparency.
+
+---
+
+##  Project Structure
+
+```text
+NewsMind-AI/
+│── main.py                  # Main Streamlit application
+│── requirements.txt         # Project dependencies
+│── faiss_store_openai.pkl   # Serialized FAISS vector database
+│── .env                     # NVIDIA API Key configuration
+└── README.md                # Project documentation
+```
+
+---
+
+##  Tech Stack
+
+- Python
+- Streamlit
+- LangChain
+- ChatNVIDIA
+- NVIDIA AI Endpoints
+- NVIDIA Embeddings
+- FAISS
+- UnstructuredURLLoader
+
+
+
+##  Environment Variables
+
+Create a `.env` file in the project root and add:
+
+```env
+NVIDIA_API_KEY=your_nvidia_api_key
+```
+
+
+##  How It Works
+
+1. Enter one or more news article URLs.
+2. The application extracts the article content.
+3. Text is split into smaller chunks.
+4. NVIDIA AI Embeddings convert the text into vector representations.
+5. FAISS indexes the vectors for fast semantic retrieval.
+6. Ask questions in natural language.
+7. ChatNVIDIA retrieves the most relevant information and generates an answer with source references.
+
+
+##  Future Improvements
+
+- Support PDF and document uploads
+- Chat history and conversation memory
+- Multiple LLM support
+- Real-time news ingestion
+- Advanced filtering and summarization
