@@ -4,7 +4,8 @@
 
 ## 📸 Screenshot
 
-> Add your application screenshot here.
+> <img width="1272" height="700" alt="Screenshot 2026-07-27 161101" src="https://github.com/user-attachments/assets/3a6416a0-872a-49eb-9681-55891764388e" />
+
 
 ![NewsMind AI](Screenshot%202026-07-27%20161101.png)
 
