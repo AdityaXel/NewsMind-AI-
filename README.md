@@ -1,4 +1,4 @@
-NewsMind AIis a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.
+NewsMind AI is a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.
 
 <img width="1272" height="700" alt="Screenshot 2026-07-27 161101" src="https://github.com/user-attachments/assets/54eb8415-7018-457f-975b-7f16aab41cd1" />
 
